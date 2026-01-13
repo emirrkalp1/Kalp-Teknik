@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Klima Tamiri & Montajı | Bakım, Gaz Dolumu, Arıza — Kalp Teknik</title>
+  <meta name="description" content="Kalp Teknik: Klima tamiri, bakım ve montaj hizmeti. Soğutmuyor, ısıtmıyor, su akıtıyor, koku yapıyor, sesli çalışıyor mu? Hızlı tespit + temiz işçilik. WhatsApp/Ara." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="canonical" href="klima.html" />
+
+  <meta property="og:title" content="Klima Tamiri & Montajı | Kalp Teknik" />
+  <meta property="og:description" content="Klima tamiri, bakım ve montaj. Soğutmuyor/ısıtmıyor/su akıtıyor/koku/ses… Hızlı servis." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- BreadcrumbList schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Anasayfa","item":"index.html"},
+      {"@type":"ListItem","position":2,"name":"Hizmetler","item":"index.html#services"},
+      {"@type":"ListItem","position":3,"name":"Klima Tamiri & Montajı","item":"klima.html"}
+    ]
+  }
+  </script>
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Kalp Teknik",
+    "telephone":"+905348473519",
+    "url":"index.html",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Kocasinan Merkez Mah. Marmara Cad. Narlıdere Sok.",
+      "addressCountry":"TR"
+    },
+    "areaServed":"Türkiye",
+    "sameAs":["https://instagram.com/kalpteknik.official"]
+  }
+  </script>
+
+  <!-- FAQ schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Klima soğutmuyor, sebebi ne olabilir?",
+        "acceptedAnswer":{"@type":"Answer","text":"Filtreler kirli olabilir, dış ünite hava alamıyor olabilir, gaz eksikliği olabilir veya sensör/elektronik arıza olabilir. Bakım ve ölçümle net tespit yapılır."}
+      },
+      {
+        "@type":"Question",
+        "name":"Klima su akıtıyor, tehlikeli mi?",
+        "acceptedAnswer":{"@type":"Answer","text":"Genellikle drenaj hattı tıkanıklığı, eğim problemi veya filtre/evaporatör kirinden kaynaklanır. Uzun süreli akıtmada iç ünite çevresinde hasar oluşabilir."}
+      },
+      {
+        "@type":"Question",
+        "name":"Klima montajı yapıyor musunuz?",
+        "acceptedAnswer":{"@type":"Answer","text":"Evet. Klima montajı ve sök-tak (yer değişimi) hizmeti veriyoruz. Keşif ve uygun konumlandırma sonrası temiz işçilikle montaj yapılır."}
+      },
+      {
+        "@type":"Question",
+        "name":"Klima bakımı ne sıklıkla yapılmalı?",
+        "acceptedAnswer":{"@type":"Answer","text":"Kullanım yoğunluğuna göre yılda en az 1 kez önerilir. Yoğun kullanımda sezona girmeden bakım performansı artırır ve koku/akıtma riskini azaltır."}
+      }
+    ]
+  }
+  </script>
+
+  <!-- Sayfaya özel minimal klima ikonu -->
+  <style>
+    .servicePage .acIcon{
+      width: 118px;
+      height: 118px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.18);
+      box-shadow: var(--shadow2);
+      position: relative;
+      overflow:hidden;
+      flex: 0 0 auto;
+    }
+    .servicePage .acIcon::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(220px 160px at 30% 25%, rgba(120,150,255,.14), transparent 65%),
+        radial-gradient(220px 160px at 80% 40%, rgba(255,120,190,.09), transparent 70%);
+      opacity: .9;
+      pointer-events:none;
+    }
+    .servicePage .acBody{
+      position:absolute;
+      left: 18px; right: 18px;
+      top: 32px; height: 44px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.03);
+    }
+    .servicePage .acVent{
+      position:absolute;
+      left: 24px; right: 24px;
+      top: 62px; height: 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.04);
+      opacity: .95;
+    }
+    .servicePage .acFlow{
+      position:absolute;
+      left: 30px; right: 30px;
+      top: 78px; height: 6px;
+      border-radius: 999px;
+      background: rgba(120,150,255,.60);
+      opacity: .75;
+      filter: blur(.1px);
+    }
+    .servicePage .acDot{
+      position:absolute;
+      right: 28px; top: 40px;
+      width: 8px; height: 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.70);
+      opacity: .55;
+    }
+
+    /* ✅ SADECE HEADER dropdown “kaçma” fix */
+    .navDrop{ position:relative; display:inline-flex; align-items:center; }
+    .navDropMenu{ top: calc(100% + 0px) !important; }
+    .navDropMenu::before{
+      content:"";
+      position:absolute;
+      left:0; right:0;
+      top:-10px;
+      height:10px;
+    }
+  </style>
+</head>
+
+<body class="servicePage">
+  <!-- HEADER (✅ düzeltildi: dropdown tıklanabilir + kaçmıyor) -->
+  <header class="glassHeader" id="siteHeader">
+    <div class="container">
+      <div class="headerInner">
+        <a class="brand" href="index.html#top" aria-label="Kalp Teknik - Anasayfa">
+          <img src="resimler/logokalp.png" alt="Kalp Teknik Logo" class="logoMark" />
+          <div class="brandText">
+            <div class="brandName">Kalp Teknik</div>
+            <div class="brandSub">Teknik Servis • Yerinde Destek</div>
+          </div>
+        </a>
+
+        <nav class="mainNav" aria-label="Ana menü">
+          <a href="index.html#top">Anasayfa</a>
+
+          <div class="navDrop" id="servicesDrop">
+            <button class="navDropBtn" id="servicesBtn" type="button"
+              aria-haspopup="true" aria-expanded="false" aria-controls="servicesMenu">
+              Hizmetler <span class="navCaret" aria-hidden="true">▾</span>
+            </button>
+
+            <div class="navDropMenu" id="servicesMenu" role="menu" aria-label="Hizmetler menüsü">
+              <a role="menuitem" href="camasir-makinesi.html">Çamaşır Makinesi Tamiri</a>
+              <a role="menuitem" href="bulasik-makinesi.html">Bulaşık Makinesi Tamiri</a>
+              <a role="menuitem" href="buzdolabi.html">Buzdolabı Tamiri</a>
+              <a role="menuitem" class="active" href="klima.html">Klima Tamiri & Montajı</a>
+              <a role="menuitem" href="kombi.html">Kombi Tamiri</a>
+              <a role="menuitem" href="petek-temizligi.html">Petek Temizliği</a>
+            </div>
+          </div>
+
+          <a href="galeri.html">Galeri</a>
+          <a href="index.html#iletisim">İletişim</a>
+        </nav>
+
+        <button class="menuBtn" id="menuBtn"
+          aria-label="Menüyü aç"
+          aria-expanded="false"
+          aria-controls="mobilePanel"
+          type="button">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 7h14M5 12h14M5 17h14"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobilePanel" id="mobilePanel" hidden>
+        <div class="mobilePanelInner">
+          <a href="index.html#top" data-close="1">Anasayfa <span>→</span></a>
+
+          <a href="camasir-makinesi.html" data-close="1">Çamaşır Makinesi <span>→</span></a>
+          <a href="bulasik-makinesi.html" data-close="1">Bulaşık Makinesi <span>→</span></a>
+          <a href="buzdolabi.html" data-close="1">Buzdolabı <span>→</span></a>
+          <a href="klima.html" data-close="1">Klima <span>→</span></a>
+          <a href="kombi.html" data-close="1">Kombi <span>→</span></a>
+          <a href="petek-temizligi.html" data-close="1">Petek Temizliği <span>→</span></a>
+
+          <a href="galeri.html" data-close="1">Galeri <span>→</span></a>
+          <a href="index.html#iletisim" data-close="1">İletişim <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" data-service="ac">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html#top">Anasayfa</a>
+        <span class="sep">›</span>
+        <a href="index.html#services">Hizmetler</a>
+        <span class="sep">›</span>
+        <span aria-current="page">Klima Tamiri & Montajı</span>
+      </nav>
+
+      <!-- HERO -->
+      <section class="heroWrap serviceHero" aria-label="Klima tamiri ve montaj">
+        <div class="panel heroLeft">
+          <div class="pill"><span class="pillDot"></span> Klima Tamiri & Montajı</div>
+
+          <h1 class="serviceTitle">Klima arızası mı? Montaj mı lazım? ✅</h1>
+
+          <p class="serviceLead">
+            Soğutmuyor/ısıtmıyor, su akıtıyor, koku yapıyor, sesli çalışıyor veya performans düştüyse hızlı tespit.
+            <b>Montaj ve sök-tak (yer değişimi) hizmeti de veriyoruz.</b>
+          </p>
+
+          <div class="chips" aria-label="Öne çıkanlar">
+            <span class="chip">✅ Klima montajı</span>
+            <span class="chip">✅ Sök-tak</span>
+            <span class="chip">Bakım</span>
+            <span class="chip">Arıza tespiti</span>
+          </div>
+
+          <div class="ctaRow" aria-label="Hızlı iletişim">
+            <a class="ctaBtn" href="tel:+905348473519">
+              <span class="mini" aria-hidden="true">☎</span> Hemen Ara
+            </a>
+            <a class="ctaBtn" href="https://wa.me/905348473519" target="_blank" rel="noreferrer">
+              <span class="mini" aria-hidden="true">💬</span> WhatsApp’tan Yaz
+            </a>
+          </div>
+
+          <p class="subhead" style="margin-top:12px;">
+            WhatsApp’a şunu yaz: <b>Marka/BTU + sorun (soğutmuyor/akıtır/koku) + montaj mı? + ilçe</b>.
+          </p>
+        </div>
+
+        <div class="panel heroRight washerSide">
+          <div class="washerSideTop">
+            <div style="display:flex;align-items:center;gap:14px;">
+              <div class="acIcon" aria-hidden="true">
+                <div class="acBody"></div>
+                <div class="acVent"></div>
+                <div class="acFlow"></div>
+                <div class="acDot"></div>
+              </div>
+
+              <div class="washerCaption">
+                <div class="washerCaptionTitle">Temiz işçilik</div>
+                <div class="washerCaptionSub">Montaj + bakım + performans kontrolü</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="washerMiniGrid" aria-label="Öne çıkanlar">
+            <div class="washerMini">
+              <div class="washerMiniK">Sık görülen</div>
+              <div class="washerMiniV">Soğutmama / akıtma</div>
+            </div>
+            <div class="washerMini">
+              <div class="washerMiniK">Montaj</div>
+              <div class="washerMiniV">Keşif + uygun konum</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTENT -->
+      <section class="infoGrid" aria-label="Klima hizmetleri">
+        <div class="box">
+          <h2>Klima servis hizmetleri</h2>
+          <ul class="list">
+            <li>Klima arıza tespiti ve onarım</li>
+            <li>Klima bakımı (filtre/evaporatör/koku giderme)</li>
+            <li>Performans kontrolü (soğutma/ısıtma)</li>
+            <li>Su akıtma sorunları (drenaj hattı kontrolü)</li>
+            <li>Ses/ titreşim kaynaklı sorunlar</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>✅ Klima montajı da yapıyoruz</h2>
+          <ul class="list">
+            <li>Yeni klima montajı</li>
+            <li>Sök-tak (yer değişimi)</li>
+            <li>Uygun konumlandırma & dış ünite yerleşimi</li>
+            <li>İzolasyon, bağlantı ve test</li>
+            <li>Temiz işçilik, düzenli teslim</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Sık görülen sorunlar">
+        <div class="sectionHead">
+          <div>
+            <h2>En sık klima sorunları</h2>
+            <p>Servis çağırmadan önce hızlı kontrol</p>
+          </div>
+        </div>
+
+        <div class="grid" style="grid-template-columns:repeat(3,1fr);">
+          <div class="card">
+            <div class="cardTop"><h3>Soğutmuyor</h3></div>
+            <p>Filtre kirliliği, dış ünite hava alamama, sensör veya performans düşüşü.</p>
+          </div>
+          <div class="card">
+            <div class="cardTop"><h3>Su akıtıyor</h3></div>
+            <p>Drenaj hattı tıkalı, eğim problemi veya iç ünite kirlenmesi.</p>
+          </div>
+          <div class="card">
+            <div class="cardTop"><h3>Koku yapıyor</h3></div>
+            <p>Nem + kir birikimi. Bakım ile ciddi şekilde azalır.</p>
+          </div>
+          <div class="card">
+            <div class="cardTop"><h3>Ses yapıyor</h3></div>
+            <p>Fan balansı, titreşim, bağlantılar veya dış ünite ayakları.</p>
+          </div>
+          <div class="card">
+            <div class="cardTop"><h3>Isıtmıyor</h3></div>
+            <p>Mod ayarı, sensör, defrost döngüsü veya elektronik arıza.</p>
+          </div>
+          <div class="card">
+            <div class="cardTop"><h3>Program / kontrol</h3></div>
+            <p>Uzaktan kumanda, kart, sensör ve bağlantı kontrolleri.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" aria-label="Sık sorulan sorular">
+        <div class="sectionHead">
+          <div>
+            <h2>Sık Sorulan Sorular</h2>
+            <p>Kısa ve net</p>
+          </div>
+        </div>
+
+        <details>
+          <summary>Klima soğutmuyor, ne yapmalıyım?</summary>
+          <p>Filtre temizliğini kontrol edin, dış ünite hava alıyor mu bakın. Devam ederse ölçüm ve tespit için servis önerilir.</p>
+        </details>
+
+        <details>
+          <summary>Klima su akıtıyor, neden?</summary>
+          <p>Çoğunlukla drenaj tıkanıklığı veya eğim problemidir. Uzun süreli akıtmada iç ünitede hasar oluşabilir.</p>
+        </details>
+
+        <details>
+          <summary>Klima montajı yapıyor musunuz?</summary>
+          <p><b>Evet.</b> Yeni montaj ve sök-tak (yer değişimi) hizmeti veriyoruz. Montaj sonrası test ederek teslim ediyoruz.</p>
+        </details>
+
+        <details>
+          <summary>Klima bakımı ne sıklıkla yapılmalı?</summary>
+          <p>Genelde yılda 1 kez önerilir. Yoğun kullanımda sezona girmeden bakım en iyi sonucu verir.</p>
+        </details>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ✅ Mini footer -->
+  <footer class="miniFooter">
+    © 2026 Kalp Teknik • Tüm hakları saklıdır.
+  </footer>
+
+  <!-- FIXED glass buttons -->
+  <div class="floatActions" aria-label="Hızlı iletişim">
+    <a class="fab glassFab" href="https://wa.me/905348473519" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+      <span class="badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.4-1.2A9 9 0 1 0 12 3z"
+            stroke="rgba(255,255,255,.92)" stroke-width="1.7" stroke-linejoin="round"/>
+          <path d="M15.8 13.8c-.2-.1-1.1-.5-1.3-.6-.2-.1-.3-.1-.4.1-.1.2-.5.6-.6.7-.1.1-.2.1-.4 0-.2-.1-.8-.3-1.5-.9-.6-.5-1-1.1-1.1-1.3-.1-.2 0-.3.1-.4l.3-.3c.1-.1.1-.2.2-.3.1-.1 0-.2 0-.3l-.6-1.3c-.1-.3-.3-.2-.4-.2h-.3c-.1 0-.3 0-.5.2-.2.2-.6.6-.6 1.5s.6 1.8.7 1.9c.1.1 1.3 2 3.2 2.7.4.2.8.3 1.1.4.4.1.9.1 1.2.1.4-.1 1.1-.4 1.3-.9.2-.4.2-.8.1-.9 0-.1-.2-.1-.4-.2z"
+            fill="rgba(255,255,255,.92)"/>
+        </svg>
+      </span>
+      <span>WhatsApp</span>
+    </a>
+
+    <a class="fab glassFab" href="tel:+905348473519" aria-label="Ara">
+      <span class="badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M7 3h3l1 5-2 1c1 3 3 5 6 6l1-2 5 1v3c0 1-1 2-2 2C10 19 5 14 5 6c0-1 1-3 2-3z"
+            stroke="rgba(255,255,255,.92)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>Ara</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- ✅ SADECE HEADER dropdown davranışı -->
+  <script>
+  (() => {
+    if (window.__KT_DROPDOWN_READY__) return;
+    window.__KT_DROPDOWN_READY__ = true;
+
+    const drop = document.getElementById("servicesDrop");
+    const btn  = document.getElementById("servicesBtn");
+    const menu = document.getElementById("servicesMenu");
+
+    if (!drop || !btn || !menu) return;
+
+    const open = () => { drop.classList.add("isOpen"); btn.setAttribute("aria-expanded","true"); };
+    const close = () => { drop.classList.remove("isOpen"); btn.setAttribute("aria-expanded","false"); };
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      drop.classList.contains("isOpen") ? close() : open();
+    });
+
+    drop.addEventListener("mouseenter", open);
+    drop.addEventListener("mouseleave", close);
+
+    menu.addEventListener("click", (e) => e.stopPropagation());
+
+    document.addEventListener("click", () => close());
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+  })();
+  </script>
+</body>
+</html>

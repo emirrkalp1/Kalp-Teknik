@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeri | Kalp Teknik</title>
+  <meta name="description" content="Kalp Teknik Galeri — yapılan işlerden örnekler." />
+  <meta name="theme-color" content="#0b0f1a" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="pageGallery">
+  <!-- HEADER (index ile aynı) -->
+  <header class="glassHeader" id="siteHeader">
+    <div class="container">
+      <div class="headerInner">
+        <a class="brand" href="index.html#top" aria-label="Kalp Teknik - Anasayfa">
+          <img src="resimler/logokalp.png" alt="Kalp Teknik Logo" class="logoMark" />
+          <div class="brandText">
+            <div class="brandName">Kalp Teknik</div>
+            <div class="brandSub">Teknik Servis • Yerinde Destek</div>
+          </div>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="mainNav" aria-label="Ana menü">
+          <a href="index.html#top">Anasayfa</a>
+
+          <!-- ✅ Hizmetler dropdown -->
+          <div class="navDrop">
+            <button class="navDropBtn" type="button" aria-haspopup="true" aria-expanded="false">
+              Hizmetler
+              <span class="navCaret" aria-hidden="true">▾</span>
+            </button>
+
+            <div class="navDropMenu" role="menu" aria-label="Hizmetler menüsü">
+              <a role="menuitem" href="camasir-makinesi.html">Çamaşır Makinesi Tamiri</a>
+              <a role="menuitem" href="bulasik-makinesi.html">Bulaşık Makinesi Tamiri</a>
+              <a role="menuitem" href="buzdolabi.html">Buzdolabı Tamiri</a>
+              <a role="menuitem" href="klima.html">Klima Tamiri & Montajı</a>
+              <a role="menuitem" href="kombi.html">Kombi Tamiri</a>
+              <a role="menuitem" href="petek-temizligi.html">Petek Temizliği</a>
+            </div>
+          </div>
+
+          <a class="active" href="galeri.html">Galeri</a>
+          <a href="index.html#iletisim">İletişim</a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button class="menuBtn" id="menuBtn"
+          aria-label="Menüyü aç"
+          aria-expanded="false"
+          aria-controls="mobilePanel"
+          type="button">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 7h14M5 12h14M5 17h14"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile panel -->
+      <div class="mobilePanel" id="mobilePanel" hidden>
+        <div class="mobilePanelInner">
+          <a href="index.html#top" data-close="1">Anasayfa <span>→</span></a>
+          <a href="index.html#services" data-close="1">Hizmetler (Genel) <span>→</span></a>
+
+          <!-- ✅ Mobil: hizmet linkleri -->
+          <div class="mobileGroup" aria-label="Hizmet sayfaları">
+            <a href="camasir-makinesi.html" data-close="1">Çamaşır Makinesi <span>→</span></a>
+            <a href="bulasik-makinesi.html" data-close="1">Bulaşık Makinesi <span>→</span></a>
+            <a href="buzdolabi.html" data-close="1">Buzdolabı <span>→</span></a>
+            <a href="klima.html" data-close="1">Klima <span>→</span></a>
+            <a href="kombi.html" data-close="1">Kombi <span>→</span></a>
+            <a href="petek-temizligi.html" data-close="1">Petek Temizliği <span>→</span></a>
+          </div>
+
+          <a href="galeri.html" data-close="1">Galeri <span>→</span></a>
+          <a href="index.html#iletisim" data-close="1">İletişim <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="mainPad">
+    <div class="container">
+      <section class="pageHead">
+        <h1>Galeri</h1>
+        <p>Yapılan işlerden örnekler. Fotoğrafa tıklayınca büyür; <b>X</b> / <b>ESC</b> / dışarı tıklama ile kapanır.</p>
+      </section>
+
+      <section class="photos" aria-label="Galeri fotoğrafları" data-gallery>
+        <button class="photoCard" type="button" data-src="resimler/galeri/1.jpg" data-alt="Galeri görsel 1">
+          <img src="resimler/galeri/1.jpg" alt="Galeri görsel 1" loading="lazy" decoding="async">
+        </button>
+
+        <button class="photoCard" type="button" data-src="resimler/galeri/2.jpg" data-alt="Galeri görsel 2">
+          <img src="resimler/galeri/2.jpg" alt="Galeri görsel 2" loading="lazy" decoding="async">
+        </button>
+
+        <button class="photoCard" type="button" data-src="resimler/galeri/3.jpg" data-alt="Galeri görsel 3">
+          <img src="resimler/galeri/3.jpg" alt="Galeri görsel 3" loading="lazy" decoding="async">
+        </button>
+
+        <button class="photoCard" type="button" data-src="resimler/galeri/4.jpg" data-alt="Galeri görsel 4">
+          <img src="resimler/galeri/4.jpg" alt="Galeri görsel 4" loading="lazy" decoding="async">
+        </button>
+
+        <button class="photoCard" type="button" data-src="resimler/galeri/5.jpg" data-alt="Galeri görsel 5">
+          <img src="resimler/galeri/5.jpg" alt="Galeri görsel 5" loading="lazy" decoding="async">
+        </button>
+
+        <button class="photoCard" type="button" data-src="resimler/galeri/6.jpg" data-alt="Galeri görsel 6">
+          <img src="resimler/galeri/6.jpg" alt="Galeri görsel 6" loading="lazy" decoding="async">
+        </button>
+
+        <button class="photoCard" type="button" data-src="resimler/galeri/7.jpg" data-alt="Galeri görsel 7">
+          <img src="resimler/galeri/7.jpg" alt="Galeri görsel 7" loading="lazy" decoding="async">
+        </button>
+
+        <button class="photoCard" type="button" data-src="resimler/galeri/8.jpg" data-alt="Galeri görsel 8">
+          <img src="resimler/galeri/8.jpg" alt="Galeri görsel 8" loading="lazy" decoding="async">
+        </button>
+      </section>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightboxBackdrop" data-close></div>
+
+    <div class="lightboxDialog" role="dialog" aria-modal="true" aria-label="Galeri görseli">
+      <button class="lightboxClose" type="button" aria-label="Kapat" data-close>×</button>
+      <img class="lightboxImg" id="lightboxImg" alt="" />
+    </div>
+  </div>
+
+  <footer class="miniFooter">
+    © 2026 Kalp Teknik • Tüm hakları saklıdır.
+  </footer>
+
+  <!-- FIXED glass buttons (sağ alt) -->
+  <div class="floatActions" aria-label="Hızlı iletişim">
+    <a class="fab glassFab" href="https://wa.me/905348473519" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+      <span class="badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.4-1.2A9 9 0 1 0 12 3z"
+            stroke="rgba(255,255,255,.92)" stroke-width="1.7" stroke-linejoin="round"/>
+          <path d="M15.8 13.8c-.2-.1-1.1-.5-1.3-.6-.2-.1-.3-.1-.4.1-.1.2-.5.6-.6.7-.1.1-.2.1-.4 0-.2-.1-.8-.3-1.5-.9-.6-.5-1-1.1-1.1-1.3-.1-.2 0-.3.1-.4l.3-.3c.1-.1.1-.2.2-.3.1-.1 0-.2 0-.3l-.6-1.3c-.1-.3-.3-.2-.4-.2h-.3c-.1 0-.3 0-.5.2-.2.2-.6.6-.6 1.5s.6 1.8.7 1.9c.1.1 1.3 2 3.2 2.7.4.2.8.3 1.1.4.4.1.9.1 1.2.1.4-.1 1.1-.4 1.3-.9.2-.4.2-.8.1-.9 0-.1-.2-.1-.4-.2z"
+            fill="rgba(255,255,255,.92)"/>
+        </svg>
+      </span>
+      <span>WhatsApp</span>
+    </a>
+
+    <a class="fab glassFab" href="tel:+905348473519" aria-label="Ara">
+      <span class="badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M7 3h3l1 5-2 1c1 3 3 5 6 6l1-2 5 1v3c0 1-1 2-2 2C10 19 5 14 5 6c0-1 1-3 2-3z"
+            stroke="rgba(255,255,255,.92)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>Ara</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

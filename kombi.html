@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Kombi Tamiri | Isıtmıyor mu? Sıcak Su Yok mu? — Kalp Teknik</title>
+  <meta name="description" content="Kalp Teknik: Kombi tamiri ve arıza tespiti. Isıtmıyor, sıcak su vermiyor, basınç düşüyor, su akıtıyor, ses yapıyor, hata veriyor mu? Hızlı servis: Ara/WhatsApp." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="canonical" href="kombi.html" />
+
+  <meta property="og:title" content="Kombi Tamiri | Kalp Teknik" />
+  <meta property="og:description" content="Kombi arızaları: ısıtmama, sıcak su yok, basınç düşmesi, su akıtma, ses… Hızlı servis." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- BreadcrumbList schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Anasayfa","item":"index.html"},
+      {"@type":"ListItem","position":2,"name":"Hizmetler","item":"index.html#services"},
+      {"@type":"ListItem","position":3,"name":"Kombi Tamiri","item":"kombi.html"}
+    ]
+  }
+  </script>
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Kalp Teknik",
+    "telephone":"+905348473519",
+    "url":"index.html",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Kocasinan Merkez Mah. Marmara Cad. Narlıdere Sok.",
+      "addressCountry":"TR"
+    },
+    "areaServed":"Türkiye",
+    "sameAs":["https://instagram.com/kalpteknik.official"]
+  }
+  </script>
+
+  <!-- FAQ schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Kombi ısıtmıyor ama sıcak su var, neden?",
+        "acceptedAnswer":{"@type":"Answer","text":"Isıtma devresi, üç yollu vana, pompa veya tesisat tarafı sorunlu olabilir. Termostat/ayarlar kontrol edilir; sürerse servis tespiti önerilir."}
+      },
+      {
+        "@type":"Question",
+        "name":"Kombi sıcak su vermiyor, ne yapmalıyım?",
+        "acceptedAnswer":{"@type":"Answer","text":"Su basıncı, sıcak su ayarı ve musluk debisi kontrol edilir. Sensör, akış türbini veya eşanjör tıkanıklığı gibi nedenler olabilir; servis önerilir."}
+      },
+      {
+        "@type":"Question",
+        "name":"Kombi basıncı sürekli düşüyor, sebebi nedir?",
+        "acceptedAnswer":{"@type":"Answer","text":"Tesisatta kaçak, genleşme tankı sorunu veya emniyet ventili kaçırması olabilir. Uzun süreli düşüşte servis tespiti gerekir."}
+      },
+      {
+        "@type":"Question",
+        "name":"Kombi hata veriyor, reset atınca düzelir mi?",
+        "acceptedAnswer":{"@type":"Answer","text":"Bazı geçici durumlarda reset işe yarayabilir; ancak hata tekrarlıyorsa arıza devam ediyor demektir. Marka/model bilgisiyle servis tespiti önerilir."}
+      }
+    ]
+  }
+  </script>
+
+  <!-- Sayfaya özel minimal kombi ikonu -->
+  <style>
+    .servicePage .boilerIcon{
+      width: 118px;
+      height: 118px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.18);
+      box-shadow: var(--shadow2);
+      position: relative;
+      overflow:hidden;
+      flex: 0 0 auto;
+    }
+    .servicePage .boilerIcon::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(220px 160px at 30% 25%, rgba(120,150,255,.14), transparent 65%),
+        radial-gradient(220px 160px at 80% 40%, rgba(255,140,200,.08), transparent 70%);
+      opacity: .9;
+      pointer-events:none;
+    }
+    .servicePage .bBody{
+      position:absolute;
+      left: 32px; right: 32px;
+      top: 18px; bottom: 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.03);
+    }
+    .servicePage .bScreen{
+      position:absolute;
+      left: 42px; right: 42px;
+      top: 30px; height: 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.04);
+      opacity: .95;
+    }
+    .servicePage .bDots{
+      position:absolute;
+      left: 50%;
+      bottom: 30px;
+      transform: translateX(-50%);
+      display:flex;
+      gap:8px;
+      opacity:.9;
+    }
+    .servicePage .bDot{
+      width: 8px; height: 8px;
+      border-radius: 999px;
+      background: rgba(120,150,255,.65);
+    }
+    .servicePage .bDot.g{ background: rgba(255,255,255,.20); }
+    .servicePage .bDrop{
+      position:absolute;
+      left: 50%;
+      top: 56px;
+      transform: translateX(-50%);
+      width: 14px;
+      height: 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(120,255,230,.08);
+      clip-path: polygon(50% 0%, 72% 25%, 82% 50%, 75% 73%, 50% 100%, 25% 73%, 18% 50%, 28% 25%);
+      opacity:.9;
+    }
+  </style>
+</head>
+
+<body class="servicePage">
+  <!-- HEADER (✅ DÜZELTİLDİ: dropdown kaçmıyor + tıklanınca açılıyor) -->
+  <header class="glassHeader" id="siteHeader">
+    <div class="container">
+      <div class="headerInner">
+        <a class="brand" href="index.html#top" aria-label="Kalp Teknik - Anasayfa">
+          <img src="resimler/logokalp.png" alt="Kalp Teknik Logo" class="logoMark" />
+          <div class="brandText">
+            <div class="brandName">Kalp Teknik</div>
+            <div class="brandSub">Teknik Servis • Yerinde Destek</div>
+          </div>
+        </a>
+
+        <nav class="mainNav" aria-label="Ana menü">
+          <a href="index.html#top">Anasayfa</a>
+
+          <div class="navDrop" id="servicesDrop" style="position:relative;display:inline-flex;align-items:center;">
+            <button class="navDropBtn" id="servicesBtn" type="button"
+              aria-haspopup="true" aria-expanded="false" aria-controls="servicesMenu">
+              Hizmetler <span class="navCaret" aria-hidden="true">▾</span>
+            </button>
+
+            <!-- Hover'da “boşluk” yüzünden kaçmaması için görünmez köprü -->
+            <span aria-hidden="true"
+              style="position:absolute;left:0;right:0;top:100%;height:10px;"></span>
+
+            <div class="navDropMenu" id="servicesMenu" role="menu" aria-label="Hizmetler menüsü"
+              style="top:100%;margin-top:0;">
+              <a role="menuitem" href="camasir-makinesi.html">Çamaşır Makinesi Tamiri</a>
+              <a role="menuitem" href="bulasik-makinesi.html">Bulaşık Makinesi Tamiri</a>
+              <a role="menuitem" href="buzdolabi.html">Buzdolabı Tamiri</a>
+              <a role="menuitem" href="klima.html">Klima Tamiri & Montajı</a>
+              <a role="menuitem" class="active" href="kombi.html">Kombi Tamiri</a>
+              <a role="menuitem" href="petek-temizligi.html">Petek Temizliği</a>
+            </div>
+          </div>
+
+          <a href="galeri.html">Galeri</a>
+          <a href="index.html#iletisim">İletişim</a>
+        </nav>
+
+        <button class="menuBtn" id="menuBtn"
+          aria-label="Menüyü aç"
+          aria-expanded="false"
+          aria-controls="mobilePanel"
+          type="button">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 7h14M5 12h14M5 17h14"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobilePanel" id="mobilePanel" hidden>
+        <div class="mobilePanelInner">
+          <a href="index.html#top" data-close="1">Anasayfa <span>→</span></a>
+
+          <a href="camasir-makinesi.html" data-close="1">Çamaşır Makinesi <span>→</span></a>
+          <a href="bulasik-makinesi.html" data-close="1">Bulaşık Makinesi <span>→</span></a>
+          <a href="buzdolabi.html" data-close="1">Buzdolabı <span>→</span></a>
+          <a href="klima.html" data-close="1">Klima <span>→</span></a>
+          <a href="kombi.html" data-close="1">Kombi <span>→</span></a>
+          <a href="petek-temizligi.html" data-close="1">Petek Temizliği <span>→</span></a>
+
+          <a href="galeri.html" data-close="1">Galeri <span>→</span></a>
+          <a href="index.html#iletisim" data-close="1">İletişim <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" data-service="boiler">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html#top">Anasayfa</a>
+        <span class="sep">›</span>
+        <a href="index.html#services">Hizmetler</a>
+        <span class="sep">›</span>
+        <span aria-current="page">Kombi Tamiri</span>
+      </nav>
+
+      <!-- HERO -->
+      <section class="heroWrap serviceHero" aria-label="Kombi tamiri">
+        <div class="panel heroLeft">
+          <div class="pill"><span class="pillDot"></span> Kombi Tamiri</div>
+
+          <h1 class="serviceTitle">Isıtmıyor mu? Sıcak su yok mu? ✅</h1>
+
+          <p class="serviceLead">
+            Kombi ısıtmıyor, sıcak su vermiyor, basınç düşüyor, su akıtıyor, ses yapıyor veya hata veriyorsa hızlı tespit.
+            Tespit → onarım → test ederek teslim.
+          </p>
+
+          <div class="chips" aria-label="Öne çıkanlar">
+            <span class="chip">Aynı gün dönüş</span>
+            <span class="chip">Net bilgilendirme</span>
+            <span class="chip">Temiz işçilik</span>
+            <span class="chip">Test ederek teslim</span>
+          </div>
+
+          <div class="ctaRow" aria-label="Hızlı iletişim">
+            <a class="ctaBtn" href="tel:+905348473519">
+              <span class="mini" aria-hidden="true">☎</span> Hemen Ara
+            </a>
+            <a class="ctaBtn" href="https://wa.me/905348473519" target="_blank" rel="noreferrer">
+              <span class="mini" aria-hidden="true">💬</span> WhatsApp’tan Yaz
+            </a>
+          </div>
+
+          <p class="subhead" style="margin-top:12px;">
+            WhatsApp’a şunu yaz: <b>Marka/Model + belirti veya hata kodu + ilçe</b>.
+          </p>
+        </div>
+
+        <div class="panel heroRight washerSide">
+          <div class="washerSideTop">
+            <div style="display:flex;align-items:center;gap:14px;">
+              <div class="boilerIcon" aria-hidden="true">
+                <div class="bBody"></div>
+                <div class="bScreen"></div>
+                <div class="bDrop"></div>
+                <div class="bDots">
+                  <span class="bDot"></span>
+                  <span class="bDot g"></span>
+                </div>
+              </div>
+
+              <div class="washerCaption">
+                <div class="washerCaptionTitle">Güvenli tespit</div>
+                <div class="washerCaptionSub">Basınç • ses • sıcak su/ısıtma</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="washerMiniGrid" aria-label="Öne çıkanlar">
+            <div class="washerMini">
+              <div class="washerMiniK">Sık görülen</div>
+              <div class="washerMiniV">Basınç düşmesi</div>
+            </div>
+            <div class="washerMini">
+              <div class="washerMiniK">Sık görülen</div>
+              <div class="washerMiniV">Sıcak su yok</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTENT -->
+      <section class="infoGrid" aria-label="Kombi arızaları ve kontrol">
+        <div class="box">
+          <h2>En sık kombi arızaları</h2>
+          <ul class="list">
+            <li>Kombi ısıtmıyor (petekler ısınmıyor)</li>
+            <li>Sıcak su gelmiyor / dalgalı geliyor</li>
+            <li>Basınç düşüyor veya yükseliyor</li>
+            <li>Su akıtıyor / damlatıyor</li>
+            <li>Sesli çalışma (vuruntu, uğultu)</li>
+            <li>Hata kodu veriyor / reset sonrası tekrar ediyor</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Hızlı kontrol (kullanıcı için)</h2>
+          <ul class="list">
+            <li>Basınç göstergesi 1.0–2.0 bar aralığında mı? (genelde ideal 1.2–1.5)</li>
+            <li>Gaz vanası açık mı? Elektrik/sigorta kontrolü</li>
+            <li>Kombi modu: kış/yaz ve sıcaklık ayarları</li>
+            <li>Radyatör vanaları açık mı? Termostat ayarı doğru mu?</li>
+            <li>Hata kodu varsa not alın (marka/model ile birlikte)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SAFETY BOX -->
+      <section class="section" aria-label="Güvenlik notu">
+        <div class="box">
+          <h2>⚠️ Güvenlik Notu</h2>
+          <p class="subhead" style="margin:0;">
+            Gaz kokusu, yoğun duman/koku, alevleme problemi veya sürekli su akıtma gibi durumlarda cihazı kapatın,
+            ortamı havalandırın ve <b>hemen</b> servis desteği alın.
+          </p>
+        </div>
+      </section>
+
+      <!-- COMMON PROBLEMS GRID -->
+      <section class="section" aria-label="Belirtiler">
+        <div class="sectionHead">
+          <div>
+            <h2>Belirtiler ve hızlı yönlendirme</h2>
+            <p>Servise gelirken işimizi hızlandıran bilgiler</p>
+          </div>
+        </div>
+
+        <div class="grid" style="grid-template-columns:repeat(3,1fr);">
+          <div class="card">
+            <div class="cardTop"><h3>Isıtmıyor</h3></div>
+            <p>Pompa, üç yollu vana, tesisat tarafı, ayar/termostat kontrolü gerekebilir.</p>
+          </div>
+          <div class="card">
+            <div class="cardTop"><h3>Sıcak su yok</h3></div>
+            <p>Akış sensörü/türbin, eşanjör tıkanıklığı veya sensör kaynaklı olabilir.</p>
+          </div>
+          <div class="card">
+            <div class="cardTop"><h3>Basınç düşüyor</h3></div>
+            <p>Tesisat kaçağı, genleşme tankı veya emniyet ventili kontrol edilir.</p>
+          </div>
+          <div class="card">
+            <div class="cardTop"><h3>Ses yapıyor</h3></div>
+            <p>Hava yapma, pompa, fan veya kireçlenme gibi nedenler görülebilir.</p>
+          </div>
+          <div class="card">
+            <div class="cardTop"><h3>Su akıtıyor</h3></div>
+            <p>Bağlantılar, conta/ventil veya tahliye hattı kontrolü yapılır.</p>
+          </div>
+          <div class="card">
+            <div class="cardTop"><h3>Hata kodu</h3></div>
+            <p>Marka/model + kod bilgisiyle daha hızlı çözüm ve doğru yönlendirme.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" aria-label="Sık sorulan sorular">
+        <div class="sectionHead">
+          <div>
+            <h2>Sık Sorulan Sorular</h2>
+            <p>Kısa ve net</p>
+          </div>
+        </div>
+
+        <details>
+          <summary>Kombi ısıtmıyor ama sıcak su var, neden?</summary>
+          <p>Isıtma devresi, pompa veya üç yollu vana tarafında problem olabilir. Ayarlar kontrol edilir; sürerse servis önerilir.</p>
+        </details>
+
+        <details>
+          <summary>Kombi basıncı sürekli düşüyor, ne anlama gelir?</summary>
+          <p>Tesisatta kaçak, genleşme tankı veya emniyet ventili kaynaklı olabilir. Uzun süreli düşüşte servis tespiti gerekir.</p>
+        </details>
+
+        <details>
+          <summary>Reset atınca düzeliyor ama tekrar hata veriyor</summary>
+          <p>Geçici toparlayabilir ama tekrar ediyorsa arıza devam ediyordur. Kod + marka/model ile tespit daha hızlı olur.</p>
+        </details>
+
+        <details>
+          <summary>Petekler üstten sıcak alttan soğuk, neden?</summary>
+          <p>Tesisatta hava/kir olabilir. Petek havası alma ve sistem kontrolü gerekebilir; devam ederse petek temizliği önerilir.</p>
+        </details>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ✅ Mini footer -->
+  <footer class="miniFooter">
+    © 2026 Kalp Teknik • Tüm hakları saklıdır.
+  </footer>
+
+  <!-- FIXED glass buttons -->
+  <div class="floatActions" aria-label="Hızlı iletişim">
+    <a class="fab glassFab" href="https://wa.me/905348473519" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+      <span class="badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.4-1.2A9 9 0 1 0 12 3z"
+            stroke="rgba(255,255,255,.92)" stroke-width="1.7" stroke-linejoin="round"/>
+          <path d="M15.8 13.8c-.2-.1-1.1-.5-1.3-.6-.2-.1-.3-.1-.4.1-.1.2-.5.6-.6.7-.1.1-.2.1-.4 0-.2-.1-.8-.3-1.5-.9-.6-.5-1-1.1-1.1-1.3-.1-.2 0-.3.1-.4l.3-.3c.1-.1.1-.2.2-.3.1-.1 0-.2 0-.3l-.6-1.3c-.1-.3-.3-.2-.4-.2h-.3c-.1 0-.3 0-.5.2-.2.2-.6.6-.6 1.5s.6 1.8.7 1.9c.1.1 1.3 2 3.2 2.7.4.2.8.3 1.1.4.4.1.9.1 1.2.1.4-.1 1.1-.4 1.3-.9.2-.4.2-.8.1-.9 0-.1-.2-.1-.4-.2z"
+            fill="rgba(255,255,255,.92)"/>
+        </svg>
+      </span>
+      <span>WhatsApp</span>
+    </a>
+
+    <a class="fab glassFab" href="tel:+905348473519" aria-label="Ara">
+      <span class="badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M7 3h3l1 5-2 1c1 3 3 5 6 6l1-2 5 1v3c0 1-1 2-2 2C10 19 5 14 5 6c0-1 1-3 2-3z"
+            stroke="rgba(255,255,255,.92)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>Ara</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- ✅ SADECE HEADER dropdown davranışı -->
+  <script>
+  (() => {
+    const drop = document.getElementById("servicesDrop");
+    const btn  = document.getElementById("servicesBtn");
+    const menu = document.getElementById("servicesMenu");
+    if (!drop || !btn || !menu) return;
+
+    const open = () => { drop.classList.add("isOpen"); btn.setAttribute("aria-expanded","true"); };
+    const close = () => { drop.classList.remove("isOpen"); btn.setAttribute("aria-expanded","false"); };
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      drop.classList.contains("isOpen") ? close() : open();
+    });
+
+    drop.addEventListener("mouseenter", open);
+    drop.addEventListener("mouseleave", close);
+
+    menu.addEventListener("click", (e) => e.stopPropagation());
+    document.addEventListener("click", () => close());
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+  })();
+  </script>
+</body>
+</html>

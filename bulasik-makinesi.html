@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Bulaşık Makinesi Tamiri | Hata Kodları, Arızalar, Çözümler — Kalp Teknik</title>
+  <meta name="description" content="Bulaşık makinesi su almıyor, boşaltmıyor, yıkamıyor, koku yapıyor mu? En yaygın arızalar ve hata kodları (E01, E02, i20, i30, F1...) açıklamaları + hızlı servis için ara/WhatsApp." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="canonical" href="bulasik-makinesi.html" />
+
+  <meta property="og:title" content="Bulaşık Makinesi Tamiri | Kalp Teknik" />
+  <meta property="og:description" content="Arızalar, belirtiler ve sık hata kodları açıklamaları. Hızlı servis için ara/WhatsApp." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- BreadcrumbList schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Anasayfa","item":"index.html"},
+      {"@type":"ListItem","position":2,"name":"Hizmetler","item":"index.html#services"},
+      {"@type":"ListItem","position":3,"name":"Bulaşık Makinesi Tamiri","item":"bulasik-makinesi.html"}
+    ]
+  }
+  </script>
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Kalp Teknik",
+    "telephone":"+905348473519",
+    "url":"index.html",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Kocasinan Merkez Mah. Marmara Cad. Narlıdere Sok.",
+      "addressCountry":"TR"
+    },
+    "areaServed":"Türkiye",
+    "sameAs":["https://instagram.com/kalpteknik.official"]
+  }
+  </script>
+
+  <!-- FAQ schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Bulaşık makinesi su almıyor, ne yapmalıyım?",
+        "acceptedAnswer":{"@type":"Answer","text":"Musluk açık mı, giriş hortumu kıvrılmış mı ve giriş filtresi tıkalı mı kontrol edin. Devam ederse su alma ventili veya kart tarafında arıza olabilir; tespit için servis önerilir."}
+      },
+      {
+        "@type":"Question",
+        "name":"Makine su boşaltmıyor (tahliye yok). Sebebi nedir?",
+        "acceptedAnswer":{"@type":"Answer","text":"En sık nedenler filtre tıkanıklığı, gider hortumu tıkanması veya tahliye pompası arızasıdır. Filtre/çöp süzgeci ve gider hattı kontrolü sonrası devam ederse servis gerekir."}
+      },
+      {
+        "@type":"Question",
+        "name":"Bulaşıklar temiz çıkmıyor, neden?",
+        "acceptedAnswer":{"@type":"Answer","text":"Pervane (sprey kolu) delikleri tıkalı olabilir, filtre kirli olabilir, deterjan/tuza ihtiyaç olabilir veya ısıtma performansı düşmüş olabilir. Genel bakım ve kontrol önerilir."}
+      },
+      {
+        "@type":"Question",
+        "name":"i20 / i30 gibi hata kodları ne anlama gelir?",
+        "acceptedAnswer":{"@type":"Answer","text":"Kodlar marka/model bazında değişebilir. Bu sayfadaki tabloda en sık kodların açıklamalarını ve önerilen aksiyonları bulabilirsiniz."}
+      }
+    ]
+  }
+  </script>
+
+  <!-- Sayfaya özel minimal ikon (mevcut tasarımı bozmadan) -->
+  <style>
+    .servicePage .dishIcon{
+      width: 118px;
+      height: 118px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.18);
+      box-shadow: var(--shadow2);
+      position: relative;
+      overflow:hidden;
+      flex: 0 0 auto;
+    }
+    .servicePage .dishIcon::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(220px 160px at 30% 25%, rgba(120,190,255,.14), transparent 65%),
+        radial-gradient(220px 160px at 80% 40%, rgba(120,190,255,.10), transparent 70%);
+      opacity: .9;
+      pointer-events:none;
+    }
+    .servicePage .dFrame{
+      position:absolute;
+      left: 22px; right: 22px;
+      top: 18px; bottom: 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.03);
+    }
+    .servicePage .dBar{
+      position:absolute;
+      left: 26px; right: 26px; top: 26px;
+      height: 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.04);
+    }
+    .servicePage .dDot{
+      position:absolute;
+      right: 30px; top: 24px;
+      width: 8px; height: 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.70);
+      opacity: .7;
+    }
+    .servicePage .dWindow{
+      position:absolute;
+      left: 28px; right: 28px;
+      top: 46px; bottom: 28px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.22);
+      overflow:hidden;
+    }
+    .servicePage .dWave{
+      position:absolute;
+      left: 10px; right: 10px;
+      top: 58%;
+      height: 5px;
+      border-radius: 999px;
+      background: rgba(120,190,255,.65);
+      opacity: .75;
+    }
+
+    /* ✅ Dropdown kaybolma bug fix (gap yok): menü butona bitişik */
+    .navDrop{ position:relative; display:inline-flex; align-items:center; }
+    .navDropMenu{ top: calc(100% + 0px) !important; } /* boşluk sıfır */
+    .navDropMenu::before{
+      content:"";
+      position:absolute;
+      left:0; right:0;
+      top:-10px;
+      height:10px; /* hover köprüsü */
+    }
+  </style>
+</head>
+
+<body class="servicePage">
+  <!-- HEADER (index ile aynı dropdown yapısı) -->
+  <header class="glassHeader" id="siteHeader">
+    <div class="container">
+      <div class="headerInner">
+        <a class="brand" href="index.html#top" aria-label="Kalp Teknik - Anasayfa">
+          <img src="resimler/logokalp.png" alt="Kalp Teknik Logo" class="logoMark" />
+          <div class="brandText">
+            <div class="brandName">Kalp Teknik</div>
+            <div class="brandSub">Teknik Servis • Yerinde Destek</div>
+          </div>
+        </a>
+
+        <nav class="mainNav" aria-label="Ana menü">
+          <a href="index.html#top">Anasayfa</a>
+
+          <!-- ✅ Hizmetler dropdown: link değil buton (tıklayınca açılsın) -->
+          <div class="navDrop" id="servicesDrop">
+            <button class="navDropBtn" id="servicesBtn" type="button"
+              aria-haspopup="true" aria-expanded="false" aria-controls="servicesMenu">
+              Hizmetler <span class="navCaret" aria-hidden="true">▾</span>
+            </button>
+
+            <div class="navDropMenu" id="servicesMenu" role="menu" aria-label="Hizmetler menüsü">
+              <a role="menuitem" href="camasir-makinesi.html">Çamaşır Makinesi Tamiri</a>
+              <a role="menuitem" class="active" href="bulasik-makinesi.html">Bulaşık Makinesi Tamiri</a>
+              <a role="menuitem" href="buzdolabi.html">Buzdolabı Tamiri</a>
+              <a role="menuitem" href="klima.html">Klima Tamiri & Montajı</a>
+              <a role="menuitem" href="kombi.html">Kombi Tamiri</a>
+              <a role="menuitem" href="petek-temizligi.html">Petek Temizliği</a>
+            </div>
+          </div>
+
+          <a href="galeri.html">Galeri</a>
+          <a href="index.html#iletisim">İletişim</a>
+        </nav>
+
+        <button class="menuBtn" id="menuBtn"
+          aria-label="Menüyü aç"
+          aria-expanded="false"
+          aria-controls="mobilePanel"
+          type="button">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 7h14M5 12h14M5 17h14"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile panel -->
+      <div class="mobilePanel" id="mobilePanel" hidden>
+        <div class="mobilePanelInner">
+          <a href="index.html#top" data-close="1">Anasayfa <span>→</span></a>
+
+          <a href="camasir-makinesi.html" data-close="1">Çamaşır Makinesi <span>→</span></a>
+          <a href="bulasik-makinesi.html" data-close="1">Bulaşık Makinesi <span>→</span></a>
+          <a href="buzdolabi.html" data-close="1">Buzdolabı <span>→</span></a>
+          <a href="klima.html" data-close="1">Klima <span>→</span></a>
+          <a href="kombi.html" data-close="1">Kombi <span>→</span></a>
+          <a href="petek-temizligi.html" data-close="1">Petek Temizliği <span>→</span></a>
+
+          <a href="galeri.html" data-close="1">Galeri <span>→</span></a>
+          <a href="index.html#iletisim" data-close="1">İletişim <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" data-service="dish">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html#top">Anasayfa</a>
+        <span class="sep">›</span>
+        <a href="index.html#services">Hizmetler</a>
+        <span class="sep">›</span>
+        <span aria-current="page">Bulaşık Makinesi Tamiri</span>
+      </nav>
+
+      <!-- HERO -->
+      <section class="heroWrap serviceHero" aria-label="Bulaşık makinesi tamiri">
+        <div class="panel heroLeft">
+          <div class="pill"><span class="pillDot"></span> Bulaşık Makinesi Tamiri</div>
+
+          <h1 class="serviceTitle">Yıkamıyor mu? Hata kodu mu çıktı? Çözelim ✅</h1>
+
+          <p class="serviceLead">
+            Su almıyor / boşaltmıyor, yıkama zayıf, koku, kaçak, program yarıda kalma gibi durumlarda
+            tespit → onarım → test ederek teslim. Aşağıda en sık arızalar ve hata kodlarının anlamları var.
+          </p>
+
+          <div class="chips" aria-label="Öne çıkanlar">
+            <span class="chip">Aynı gün dönüş</span>
+            <span class="chip">Net bilgilendirme</span>
+            <span class="chip">Test ederek teslim</span>
+            <span class="chip">Yerinde servis</span>
+          </div>
+
+          <div class="ctaRow" aria-label="Hızlı iletişim">
+            <a class="ctaBtn" href="tel:+905348473519">
+              <span class="mini" aria-hidden="true">☎</span> Hemen Ara
+            </a>
+            <a class="ctaBtn" href="https://wa.me/905348473519" target="_blank" rel="noreferrer">
+              <span class="mini" aria-hidden="true">💬</span> WhatsApp’tan Yaz
+            </a>
+          </div>
+
+          <p class="subhead" style="margin-top:12px;">
+            WhatsApp’a şunu yazman yeter: <b>Marka/Model + görünen kod + ilçe</b>.
+          </p>
+        </div>
+
+        <div class="panel heroRight washerSide">
+          <div class="washerSideTop">
+            <div style="display:flex;align-items:center;gap:14px;">
+              <div class="dishIcon" aria-hidden="true">
+                <div class="dFrame"></div>
+                <div class="dBar"></div>
+                <div class="dDot"></div>
+                <div class="dWindow"><div class="dWave"></div></div>
+              </div>
+
+              <div class="washerCaption">
+                <div class="washerCaptionTitle">Hızlı tespit</div>
+                <div class="washerCaptionSub">Kod / belirti → net yönlendirme</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="washerMiniGrid" aria-label="Öne çıkanlar">
+            <div class="washerMini">
+              <div class="washerMiniK">Sık görülen</div>
+              <div class="washerMiniV">Tahliye / yıkama</div>
+            </div>
+            <div class="washerMini">
+              <div class="washerMiniK">Hızlı süreç</div>
+              <div class="washerMiniV">Tespit + onarım</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTENT -->
+      <section class="infoGrid" aria-label="Belirtiler">
+        <div class="box">
+          <h2>En sık bulaşık makinesi arızaları</h2>
+          <ul class="list">
+            <li>Su almıyor / suyu az alıyor</li>
+            <li>Su boşaltmıyor (tahliye yok)</li>
+            <li>Yıkamıyor / deterjanı eritmiyor</li>
+            <li>Kurutmuyor / buhar çıkıyor</li>
+            <li>Koku yapıyor</li>
+            <li>Altından su kaçırıyor / i30 benzeri kaçak uyarıları</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Hızlı kontrol (kullanıcı için)</h2>
+          <ul class="list">
+            <li>Filtre ve çöp süzgeci temiz mi?</li>
+            <li>Pervane (sprey kolu) delikleri tıkalı mı?</li>
+            <li>Gider hortumu kıvrılmış/tıkalı mı?</li>
+            <li>Musluk açık mı? Su basıncı var mı?</li>
+            <li>Kapak tam kapanıyor mu?</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ERROR CODES -->
+      <section class="section" aria-label="Bulaşık makinesi hata kodları">
+        <div class="sectionHead">
+          <div>
+            <h2>Bulaşık Makinesi Hata Kodları</h2>
+            <p>Markaya göre filtrele + kod ara</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="tabs" data-tabs aria-label="Marka sekmeleri"></div>
+
+          <div class="toolsRow">
+            <input class="searchInput" data-code-search placeholder="Kod veya kelime ara (örn: i20, i30, F1, E02, tahliye, ısıtma…)" />
+            <div class="pillInfo">Toplam: <b data-code-count>0 kayıt</b></div>
+          </div>
+
+          <div class="tableWrap" role="region" aria-label="Hata kodları tablosu" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th>Kod</th>
+                  <th>Anlam</th>
+                  <th>Muhtemel Nedenler</th>
+                  <th>Önerilen Aksiyon</th>
+                </tr>
+              </thead>
+              <tbody data-code-body>
+                <tr><td class="mutedRow" colspan="4">Tablo yükleniyor…</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="subhead" style="margin-top:10px;">
+            Not: Kodlar marka/model yazılımına göre değişebilir. En sağlıklı çözüm: <b>marka + model + kod</b>.
+          </p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" aria-label="Sık sorulan sorular">
+        <div class="sectionHead">
+          <div>
+            <h2>Sık Sorulan Sorular</h2>
+            <p>Kısa ve net</p>
+          </div>
+        </div>
+
+        <details>
+          <summary>Bulaşık makinesi su almıyor, ne yapmalıyım?</summary>
+          <p>Musluk, giriş hortumu ve giriş filtresini kontrol edin. Devam ederse su alma ventili veya kart tarafı arıza olabilir.</p>
+        </details>
+
+        <details>
+          <summary>Makine su boşaltmıyor (tahliye yapmıyor). Sebebi nedir?</summary>
+          <p>Filtre/çöp süzgeci tıkanıklığı, gider hortumu tıkanması veya pompa arızası olabilir. Temizlik sonrası sürerse servis gerekir.</p>
+        </details>
+
+        <details>
+          <summary>Bulaşıklar temiz çıkmıyor, neden?</summary>
+          <p>Filtre kirli, pervane tıkalı, deterjan/tuza ihtiyaç veya ısıtma performansı düşük olabilir. Bakım ve kontrol önerilir.</p>
+        </details>
+
+        <details>
+          <summary>i20 / i30 hata kodları ne anlama gelir?</summary>
+          <p>Kodlar markaya göre değişebilir. Tablo kısmında arama yaparak kodun açıklamasına hızlıca ulaşabilirsin.</p>
+        </details>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="miniFooter">
+    © 2026 Kalp Teknik • Tüm hakları saklıdır.
+  </footer>
+
+  <!-- FIXED glass buttons -->
+  <div class="floatActions" aria-label="Hızlı iletişim">
+    <a class="fab glassFab" href="https://wa.me/905348473519" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+      <span class="badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.4-1.2A9 9 0 1 0 12 3z"
+            stroke="rgba(255,255,255,.92)" stroke-width="1.7" stroke-linejoin="round"/>
+          <path d="M15.8 13.8c-.2-.1-1.1-.5-1.3-.6-.2-.1-.3-.1-.4.1-.1.2-.5.6-.6.7-.1.1-.2.1-.4 0-.2-.1-.8-.3-1.5-.9-.6-.5-1-1.1-1.1-1.3-.1-.2 0-.3.1-.4l.3-.3c.1-.1.1-.2.2-.3.1-.1 0-.2 0-.3l-.6-1.3c-.1-.3-.3-.2-.4-.2h-.3c-.1 0-.3 0-.5.2-.2.2-.6.6-.6 1.5s.6 1.8.7 1.9c.1.1 1.3 2 3.2 2.7.4.2.8.3 1.1.4.4.1.9.1 1.2.1.4-.1 1.1-.4 1.3-.9.2-.4.2-.8.1-.9 0-.1-.2-.1-.4-.2z"
+            fill="rgba(255,255,255,.92)"/>
+        </svg>
+      </span>
+      <span>WhatsApp</span>
+    </a>
+
+    <a class="fab glassFab" href="tel:+905348473519" aria-label="Ara">
+      <span class="badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M7 3h3l1 5-2 1c1 3 3 5 6 6l1-2 5 1v3c0 1-1 2-2 2C10 19 5 14 5 6c0-1 1-3 2-3z"
+            stroke="rgba(255,255,255,.92)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>Ara</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- ✅ Dropdown kesin çalışsın diye: sadece bu sayfada güvenli ek (çakışma önlemli) -->
+  <script>
+  (() => {
+    if (window.__KT_DROPDOWN_READY__) return;
+    window.__KT_DROPDOWN_READY__ = true;
+
+    const drop = document.getElementById("servicesDrop");
+    const btn  = document.getElementById("servicesBtn");
+    const menu = document.getElementById("servicesMenu");
+
+    if (!drop || !btn || !menu) return;
+
+    const open = () => { drop.classList.add("isOpen"); btn.setAttribute("aria-expanded","true"); };
+    const close = () => { drop.classList.remove("isOpen"); btn.setAttribute("aria-expanded","false"); };
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      drop.classList.contains("isOpen") ? close() : open();
+    });
+
+    // Hover ile de açık kalsın (tıklamaya engel değil)
+    drop.addEventListener("mouseenter", open);
+    drop.addEventListener("mouseleave", close);
+
+    // Menü içinde tıklayınca kapanmasın, linke tıklanınca zaten sayfa değişecek
+    menu.addEventListener("click", (e) => e.stopPropagation());
+
+    document.addEventListener("click", () => close());
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+  })();
+  </script>
+</body>
+</html>
